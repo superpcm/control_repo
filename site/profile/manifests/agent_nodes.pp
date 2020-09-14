@@ -4,15 +4,15 @@ class profile::agent_nodes {
   dockeragent::node {'db.puppet.vm':}
   dockeragent::node {'minetest.puppet.vm':}
   host {'web.puppet.vm':
-    ensure => present,
-    ip     => '172.18.0.2',
+      ensure => present,
+      ip     => '172.18.0.2',
   }
   host {'db.puppet.vm':
-    ensure => present,
-    ip     => '172.18.0.3',
+      ensure => present,
+      ip     => '172.18.0.3',
   }
     host {'minetest.puppet.vm':
-    ensure => present,
-    ip     => '172.18.0.4',
+      ensure => present,
+      ip     => '172.18.0.4',
   }
 }
